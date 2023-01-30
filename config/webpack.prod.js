@@ -3,7 +3,7 @@ const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPl
 const commonConfig = require('./webpack.common');
 const packageJson = require('../package.json');
 
-const domain = 'https://mfeghworkflow.z13.web.core.windows.net/';
+const domain = 'https://mfeghworkflow.z13.web.core.windows.net';
 
 const prodConfig = {
   mode: 'production',
