@@ -18,9 +18,9 @@ const devConfig = {
     new ModuleFederationPlugin({
       name: 'container',
       remotes: {
-        marketing: 'marketing@http://localhost:8081/remoteEntry.js',
-        auth: 'auth@http://localhost:8082/remoteEntry.js',
-        dashboard: 'dashboard@http://localhost:8083/remoteEntry.js',
+        marketing: 'marketing@https://azwebappgithubworkflow.z13.web.core.windows.net/marketing/latest/remoteEntry.js',
+        auth: 'auth@https://azwebappgithubworkflow.z13.web.core.windows.net/auth/latest/remoteEntry.js',
+        dashboard: 'dashboard@https://azwebappgithubworkflow.z13.web.core.windows.net/dashboard/latest/remoteEntry.js',
       },
       shared: packageJson.dependencies,
     }),
